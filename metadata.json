@@ -1,0 +1,5 @@
+{
+  "name": "장소 추천",
+  "description": "An AI-powered travel planner that suggests destinations and recommends places based on your selected preferences, using real-time information from Google Maps.",
+  "requestFramePermissions": []
+}

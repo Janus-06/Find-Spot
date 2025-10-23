@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI 장소 추천</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.25.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<style>
+      @keyframes fade-in-up {
+        from {
+          opacity: 0;
+          transform: translateY(30px) scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+      .animate-fade-in-up {
+        animation: fade-in-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      @keyframes subtle-pulse {
+        0%, 100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        50% {
+            transform: scale(0.98);
+            opacity: 0.9;
+        }
+      }
+      .animate-subtle-pulse {
+          animation: subtle-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+    </style>
+</head>
+  <body class="bg-slate-950 text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
